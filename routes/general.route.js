@@ -24,7 +24,7 @@ router.post(
   "/libros/crear",
   [
     check("titulo", "El titulo es obligatorio").not().isEmpty(),
-    // check('autor', 'El autor es obligatorio').not().isEmpty(),
+    check('autor', 'El autor es obligatorio').not().isEmpty(),
     check("sipnosis", "La sipnosis es obligatoria").not().isEmpty(),
     check("portada", "La portada es obligatoria").not().isEmpty(),
     validarCampos,
